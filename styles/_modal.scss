@@ -1,0 +1,29 @@
+// bg-sidebar1 p-[64px] border border-active/10 rounded
+
+.ant-modal {
+  .ant-modal-content {
+    background: $primary1;
+    border-radius: 4px;
+    .ant-modal-close {
+      display: none;
+    }
+    .ant-modal-body {
+      padding: 0;
+      .modal-header {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .modal-footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 16px;
+      }
+    }
+    .ant-modal-footer {
+      display: none;
+    }
+  }
+}

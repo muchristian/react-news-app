@@ -1,0 +1,35 @@
+.ant-form-item-control-input-content > .ant-picker {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  &:hover {
+    border-color: $secondary;
+    outline: 0;
+    box-shadow: none;
+  }
+  &:focus {
+    border-color: $secondary;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.ant-picker-panel {
+  .ant-picker-body {
+    table {
+      td.ant-picker-cell-selected {
+        .ant-picker-cell-inner {
+          background-color: $secondary;
+        }
+      }
+      td.ant-picker-cell-today {
+        .ant-picker-cell-inner::before {
+          border-color: $secondary;
+        }
+      }
+    }
+  }
+  .ant-picker-footer {
+    .ant-picker-today-btn {
+      color: $secondary;
+    }
+  }
+}

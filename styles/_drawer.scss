@@ -1,0 +1,32 @@
+// bg-sidebar1 p-[64px] border border-active/10 rounded
+
+.ant-drawer {
+  .ant-drawer-content {
+    background: $primary1;
+    border-radius: 4px;
+    .ant-drawer-close {
+      display: none;
+    }
+    .ant-drawer-body {
+      padding: 0;
+      .drawer-body {
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+      }
+      .drawer-footer {
+        border-top: 1px solid $primary;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    .ant-drawer-footer {
+      display: none;
+    }
+  }
+}
+
+.drawer-body {
+}
