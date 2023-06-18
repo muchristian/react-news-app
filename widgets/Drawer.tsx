@@ -38,6 +38,7 @@ const Drawer: React.FC<props> = ({
             <EditOutlined
               className="text-primary text-[24px]"
               onClick={editHandler}
+              rev={undefined}
             />
           </div>
           <p className="text-primary/80">Set up your news preference</p>
