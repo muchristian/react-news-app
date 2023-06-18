@@ -1,20 +1,25 @@
 ## News-Feed
 
+React Frontend of a news web application
+
 ![Login](./public/login.png)
 ![Home](./public/home.png)
 ![Preference-settings](./public/preference-setting.png)
 
-React Frontend of a news web application
+## Testing Guide
 
-## Execution Guide
+Use the guideline below, to run this frontend application.
 
-To run the both Frontend, you can use the guideline below.
-
-### Requirements
+### Prerequisites
 
 - Have docker installed on Local environment.
 
-Create a `docker-compose.yml` file and add the following instructions
+### Installation
+
+Create a folder and add in the files below
+
+1. Create an `.env` file, and use the provided configurations within the `env.example` file as a boilerplate.
+2. Create a `docker-compose.yml` file, and paste the following configuration:
 
 ```shell
 version: "3.7"
@@ -29,11 +34,7 @@ services:
 
 networks:
   news-feed:
-    external: true
-    name: news-feed
 
 ```
 
-After create `.env` file within the same folder and paste in variable from `.env.example` file. Then modify complying with your configuration especially database credentials.
-
-After adding the file, run `docker compose up`
+After run `docker compose up -d --build newsweb` to start the application
